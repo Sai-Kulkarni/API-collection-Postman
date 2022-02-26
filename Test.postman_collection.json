@@ -12,12 +12,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code name has string\", function () {\r",
-							"    pm.response.to.have.status(\"Created\");\r",
-							"});\r",
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});"
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -27,11 +22,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://reqres.in/api/users?page=2",
-					"protocol": "https",
+					"raw": "{{baseURL}}/api/users?page=2",
 					"host": [
-						"reqres",
-						"in"
+						"{{baseURL}}"
 					],
 					"path": [
 						"api",
